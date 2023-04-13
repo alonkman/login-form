@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+    <title>login form</title>
+    
+  </head>
+  <body style="background-color: #007bff;">
+    <div class="login-form">
+      <h2 style="font-family: sans-serif">Login</h2>
+
+      <div class="form-group">
+        <label for="username" style="font-family: sans-serif">Username:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" style="font-family: sans-serif">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Enter your password"
+          aria-placeholder="1234"
+        />
+      </div>
+     
+      
+      <button type="button" class="btn btn-primary" onclick="login()">
+        Submit
+      </button> <br>
+
+        <div class="gender-selector">
+        <label>
+          <input type="radio" name="gender" value="male" />
+          <span>Male</span>
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" />
+          <span>Female</span> 
+        </label>
+        <label>
+          <input type="radio" name="gender" value="other" />
+          <span>Other</span>
+        </label>
+      </div>
+
+      <div id="alert"></div>
+      
+
+      <div class="chart-section">
+        <p style="font-family: sans-serif">Death meter:</p>
+        <input
+          type="number"
+          id="age"
+          class="form-control"
+          placeholder="Enter your age"
+        />
+        <button type="button" class="btn btn-primary" onclick="showChart()"> Submit Age</button>
+        <div id="chart"></div>
+      </div> 
+      <p style="font-family: sans-serif">Here you can write some notes: </p>
+              <textarea class="form-control" id="notes" rows="5"></textarea>
+    </div>
+    
+    <script>
+           
+    </script>
+  </body>
+</html>
